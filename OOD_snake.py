@@ -17,33 +17,33 @@ Color_Blue = (0, 0, 255)
 gs = Game_state()
 num_of_player = gs.num_of_player
 
-pygame.init()  # 啟動 Pygame
-screen = pygame.display.set_mode((640, 320))  # 建立繪圖視窗
-pygame.display.set_caption("基本架構")  # 繪圖視窗標題
+pygame.init()
+screen = pygame.display.set_mode((640, 320))
+pygame.display.set_caption("Snake Game")
 
-background = pygame.Surface(screen.get_size())  # 建立畫布
+background = pygame.Surface(screen.get_size())
 background = background.convert()
-background.fill(Color_White)  # 畫布為白色
+background.fill(Color_White)
 
 step_size = 10
-snake_length = 10
+snake_length = 30
 
 snakes = [Snake(step_size, snake_length, i, background) for i in range(num_of_player)]
 
-screen.blit(background, (0, 0))  # 在繪圖視窗繪製畫布
-pygame.display.update()  # 更新繪圖視窗
+screen.blit(background, (0, 0))
+pygame.display.update()
 
 food = Food(step_size, background)
 
 scoreboard = Scoreboard(screen, snakes)
 
-clock = pygame.time.Clock()  # 建立時間元件
+clock = pygame.time.Clock()
 
 running = True
-while running:  # 無窮迴圈
+while running:
 
     for event in pygame.event.get():
-        if event.type == pygame.QUIT:  # 使用者按關閉鈕
+        if event.type == pygame.QUIT:
             running = False
 
         elif event.type == pygame.KEYDOWN:
@@ -88,16 +88,15 @@ while running:  # 無窮迴圈
 
         snake.show()
 
-    screen.blit(background, (0, 0))  # 在繪圖視窗繪製畫布
+    screen.blit(background, (0, 0))
 
-    # 更新計分板
     scoreboard.update()
 
-    pygame.display.update()  # 更新繪圖視窗
+    pygame.display.update()
 
-    # time.sleep(0.1)
-    clock.tick(10)
+    # clock.tick(10)
+    clock.tick(5)
 
-pygame.quit()  # 關閉繪圖視窗
+pygame.quit()
 
 gs.show_winner(snakes)
