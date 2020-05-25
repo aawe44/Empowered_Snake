@@ -11,22 +11,22 @@ class Game_state:
 
     def select_num_of_player(self):
 
-        pygame.init()  # 啟動 Pygame
-        screen = pygame.display.set_mode((640, 320))  # 建立繪圖視窗
-        pygame.display.set_caption("基本架構")  # 繪圖視窗標題
+        pygame.init()
+        screen = pygame.display.set_mode((640, 320))
+        pygame.display.set_caption("Snake Game")
 
-        background = pygame.Surface(screen.get_size())  # 建立畫布
+        background = pygame.Surface(screen.get_size())
         background = background.convert()
-        background.fill(Color_White)  # 畫布為白色
+        background.fill(Color_White)
 
-        strings = ["Number of player, press space to select.", "=> one player", "two players"]
+        strings = ["Press [SPACE] to select.", "Number of player:", "=> one player", "two players"]
 
         running = True
 
         cnt = 0
         while running:
             for event in pygame.event.get():
-                if event.type == pygame.QUIT:  # 使用者按關閉鈕
+                if event.type == pygame.QUIT:
                     running = False
 
                 elif event.type == pygame.KEYDOWN:
@@ -38,43 +38,43 @@ class Game_state:
 
             idx = cnt % 2
 
-            strings[1] = "=> one player" if idx == 0 else "    one player"
-            strings[2] = "    two players" if idx == 0 else "=> two players"
+            strings[2] = "=> one player" if idx == 0 else "    one player"
+            strings[3] = "    two players" if idx == 0 else "=> two players"
 
-            screen.blit(background, (0, 0))  # 在繪圖視窗繪製畫布
+            screen.blit(background, (0, 0))
 
             for i, string in enumerate(strings):
                 font = pygame.font.SysFont("comicsansms", 16)
-                text = font.render(string, True, (0, 0, 255), Color_White)  # 綠色底，藍色字 (R,G,B)
-                screen.blit(text, (250, 100 + 20 * i))
+                text = font.render(string, True, (0, 0, 255), Color_White)
+                screen.blit(text, (235, 100 + 20 * i))
 
-            pygame.display.update()  # 更新繪圖視窗
+            pygame.display.update()
             time.sleep(0.1)
 
-        screen.blit(background, (0, 0))  # 在繪圖視窗繪製畫布
+        screen.blit(background, (0, 0))
 
         num_of_player = cnt % 2 + 1
 
         string = "one player" if num_of_player == 1 else "two players"
         font = pygame.font.SysFont("comicsansms", 24)
-        text = font.render(string, True, (0, 0, 255), Color_White)  # 綠色底，藍色字 (R,G,B)
+        text = font.render(string, True, (0, 0, 255), Color_White)
         screen.blit(text, (250, 100))
         pygame.display.update()
         time.sleep(3)
 
-        pygame.quit()  # 關閉繪圖視窗
+        pygame.quit()
         return num_of_player
 
     def show_winner(self, snakes):
 
-        pygame.init()  # 啟動 Pygame
-        screen = pygame.display.set_mode((640, 320))  # 建立繪圖視窗
-        pygame.display.set_caption("基本架構")  # 繪圖視窗標題
+        pygame.init()
+        screen = pygame.display.set_mode((640, 320))
+        pygame.display.set_caption("Snake Game")
 
-        background = pygame.Surface(screen.get_size())  # 建立畫布
+        background = pygame.Surface(screen.get_size())
         background = background.convert()
-        background.fill(Color_White)  # 畫布為白色
-        screen.blit(background, (0, 0))  # 在繪圖視窗繪製畫布
+        background.fill(Color_White)
+        screen.blit(background, (0, 0))
 
         if len(snakes) == 1:
             string = "Game Over"
@@ -86,14 +86,9 @@ class Game_state:
                     string += str(snake.player + 1)
 
         font = pygame.font.SysFont("comicsansms", 24)
-        text = font.render(string, True, (0, 0, 255), Color_White)  # 綠色底，藍色字 (R,G,B)
+        text = font.render(string, True, (0, 0, 255), Color_White)
         screen.blit(text, (250, 100))
         pygame.display.update()
         time.sleep(3)
 
-        pygame.quit()  # 關閉繪圖視窗
-
-# =================================
-# num = select_num_of_player()
-#
-# print(num)
+        pygame.quit()
