@@ -25,9 +25,9 @@ The classic sanke game recreated using `Pygame` and `python`.
 
 [[Back to top]](https://github.com/aawe44/OOD_snake#index)
 
-| ![Screen 1](https://i.imgur.com/99VLoKs.png) | ![Screen 2](https://i.imgur.com/Ykc0hXu.png) |
+| ![Screen 1](https://raw.githubusercontent.com/aawe44/pic_for_OOD_snake/master/01_start_game.png) | ![Screen 2](https://raw.githubusercontent.com/aawe44/pic_for_OOD_snake/master/02_single_player.png) |
 |---------------------------------------------|---------------------------------------------|
-| ![Screen 3](https://i.imgur.com/FE5MTWt.png) | ![Screen 4](https://i.imgur.com/yS9nyPM.png) |
+| ![Screen 3](https://raw.githubusercontent.com/aawe44/pic_for_OOD_snake/master/03_food.png) | ![Screen 4](https://raw.githubusercontent.com/aawe44/pic_for_OOD_snake/master/04_two_player.png) |
 
 
 
