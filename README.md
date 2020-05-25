@@ -26,9 +26,12 @@ pic or gif
 
 
 # Game features 
+* Players can choose a single or double players.
+  * Enjoy the thrill of the two-player competition mode.
 
-* single player or two player
-* special food can inveable snake
+
+* Special food can keep the snake invincible
+  * Add fun between competitions
 
 
 # Technique details
