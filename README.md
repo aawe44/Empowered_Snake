@@ -6,6 +6,17 @@ The classic sanke game recreated using `Pygame` and `python`.
 
 ## Index
 
+- [Game illustration / Demo](https://github.com/aawe44/OOD_snake#game-illustration--demo) 
+
+- [Game features](https://github.com/aawe44/OOD_snake#game-features) 
+
+- [Technique details](https://github.com/aawe44/OOD_snake#technique-details) 
+
+- [How to install, how to play(controls)](https://github.com/aawe44/OOD_snake#how-to-install-how-to-playcontrols) 
+
+  
+
+
 
 
 # Game illustration / Demo
@@ -25,7 +36,7 @@ pic or gif
 using OOD method
 
 
-# how to install, how to play(controls)
+# How to install, how to play(controls)
 
 install python 
 
