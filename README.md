@@ -14,7 +14,7 @@ The classic sanke game recreated using `Pygame` and `python`.
 
 - [Technique details](https://github.com/aawe44/OOD_snake#technique-details) 
 
-- [How to install, how to play(controls)](https://github.com/aawe44/OOD_snake#how-to-install-how-to-playcontrols) 
+- [How to install](https://github.com/aawe44/OOD_snake#how-to-install-how-to-playcontrols) 
 
   
 
@@ -25,7 +25,9 @@ The classic sanke game recreated using `Pygame` and `python`.
 
 [[Back to top]](https://github.com/aawe44/OOD_snake#index)
 
-pic or gif
+| ![Screen 1](https://i.imgur.com/99VLoKs.png) | ![Screen 2](https://i.imgur.com/Ykc0hXu.png) |
+|---------------------------------------------|---------------------------------------------|
+| ![Screen 3](https://i.imgur.com/FE5MTWt.png) | ![Screen 4](https://i.imgur.com/yS9nyPM.png) |
 
 
 
