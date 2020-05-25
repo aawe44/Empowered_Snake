@@ -86,7 +86,7 @@ class Snake:
 
         step_size = self.step_size
 
-        pygame.draw.rect(self.background , Color_White, [self.tail[0], self.tail[1], step_size, step_size])
+        pygame.draw.rect(self.background, Color_White, [self.tail[0], self.tail[1], step_size, step_size])
 
         x, y = self.body[-1]
         dx, dy = Directions[self.direct]
@@ -99,7 +99,7 @@ class Snake:
 
         self.body.append([nx, ny])
         self.visited[(nx, ny)] += 1
-        pygame.draw.rect(self.background , Color_Green, [nx, ny, step_size, step_size])
+        pygame.draw.rect(self.background, Color_Green, [nx, ny, step_size, step_size])
 
         if not running:
             self.is_valid = False
@@ -113,7 +113,7 @@ class Snake:
         self.body.appendleft(self.tail)
         self.visited[tuple(self.tail)] += 1
 
-        pygame.draw.rect(self.background , self.body_color, [self.tail[0], self.tail[1], step_size, step_size])
+        pygame.draw.rect(self.background, self.body_color, [self.tail[0], self.tail[1], step_size, step_size])
 
     def show(self):
 
@@ -121,5 +121,5 @@ class Snake:
 
         for x, y in reversed([(x, y) for x, y in self.body]):
             color = Color_Black if self.inevitable and cnt % 2 == 1 else self.body_color
-            pygame.draw.rect(self.background , color, [x, y, self.step_size, self.step_size])
+            pygame.draw.rect(self.background, color, [x, y, self.step_size, self.step_size])
             cnt += 1
