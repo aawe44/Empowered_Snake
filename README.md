@@ -1,57 +1,57 @@
-## Snake Game
+# Empowered Snake: An extension of the classic Snake game
 
-The classic sanke game recreated using `Pygame` and `python`.
+This "Empowered Snake" game is the power enhanced version of the classic Snake game, with extra features and extra fun. Empowered Snake characterizes:
+
+1. two snakes playing together in one window, XXX [Adding more challenge; more competitiveness, blablabla]
+
+2. inevitable reward from food, allowing snakes crossing itself during a short period
+
+Author: Jason Chen (CONTACT INFORMATION)
 
 
 
-## Index
-
-- [Game illustration / Demo](https://github.com/aawe44/OOD_snake#game-illustration--demo) 
-
-- [Game features](https://github.com/aawe44/OOD_snake#game-features) 
-
-  - [Controls](https://github.com/aawe44/OOD_snake#controls) 
-
-- [Technique details](https://github.com/aawe44/OOD_snake#technique-details) 
-
-- [How to install](https://github.com/aawe44/OOD_snake#how-to-install-how-to-playcontrols) 
-
-  
 
 
 
 
 # Game illustration / Demo
 
-[[Back to top]](https://github.com/aawe44/OOD_snake#index)
 
-|![Screen 1](https://raw.githubusercontent.com/aawe44/pic_for_OOD_snake/master/gif/single.gif)|![Screen 2](https://raw.githubusercontent.com/aawe44/pic_for_OOD_snake/master/gif/two.gif)
+|![Screen 1](https://raw.githubusercontent.com/aawe44/pic_for_OOD_snake/master/gif/two.gif)|![Screen 2](https://raw.githubusercontent.com/aawe44/pic_for_OOD_snake/master/gif/single.gif)
 |---------------------------------------------|---------------------------------------------|
+|Two players competing each other by each controlling a snake on the board|Self-crossing in the inevitable mode
+|
 
 
-## Game screenshots
-| ![Screen 1](https://raw.githubusercontent.com/aawe44/pic_for_OOD_snake/master/01_start_game.png) | ![Screen 2](https://raw.githubusercontent.com/aawe44/pic_for_OOD_snake/master/02_single_player.png) |
-|---------------------------------------------|---------------------------------------------|
-| ![Screen 3](https://raw.githubusercontent.com/aawe44/pic_for_OOD_snake/master/03_food.png) | ![Screen 4](https://raw.githubusercontent.com/aawe44/pic_for_OOD_snake/master/04_two_player.png) |
+# Installation
+
+There are instant-play mode and pygame-compile mode. 
+
+1. instant-play: run the exe/dmg/xxx file from [DIR].
+
+2. pygame-compile:
+> pip install pygame
+> cd OOD_snake
+> python empowered_snake.py
+
+# Developer Notes
+
+1. The framework is developed in PyGame, utilizing interactive game window, keyboard/mouse control, and gameplay time-series features, etc..
+2. The development is based on Object-Oriented Programming, in which XXX (介绍一下不同的文件代表不同的类, 以及不同的类之间的关系)
+3. Inevitable Reward functionality:
+3.1. Add random seed to the food generated, making some of them in different color XXX
+3.2. Whenever the snake eats the food, start a time counter and turn the game-loop into XXX mode.
+3.3. in the XXX mode, modify the collision function so that XXX
+3.4. When counter ends...
+4. Two-Snake functionality: 
+4.1 XXX
 
 
+8. we use XXX module to export the game to executable files for different OS systems, see `XXX.py` for details.
 
-# Game features 
-
-[[Back to top]](https://github.com/aawe44/OOD_snake#index)
-
-* Players can choose a single or double players.
-  * Enjoy the thrill of the two-player competition mode.
-
-
-* Special food can keep the snake invincible
-  * Add fun between competitions
 
 
 # Controls
-
-[[Back to top]](https://github.com/aawe44/OOD_snake#index)
-
 ## Single player       
 
 | Action       | Button - Single player |
@@ -70,26 +70,5 @@ The classic sanke game recreated using `Pygame` and `python`.
 | Move right   | <kbd>Right</kbd>    |<kbd>F</kbd>     |
 | Move up      | <kbd>Up</kbd>       |<kbd>W</kbd>     |
 | Move down    | <kbd>Down</kbd>     |<kbd>S</kbd>     |
-
-
-
-
-# Technique details
-
-[[Back to top]](https://github.com/aawe44/OOD_snake#index)
-
-using OOD method
-
-
-# How to install
-
-[[Back to top]](https://github.com/aawe44/OOD_snake#index)
-
-install python 
-
-install pygame 
-
-start ood_snake.py
-
 
 
