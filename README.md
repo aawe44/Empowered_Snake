@@ -2,11 +2,15 @@
 
 This "Empowered Snake" game is the power enhanced version of the classic Snake game, with extra features and extra fun. Empowered Snake characterizes:
 
-1. two snakes playing together in one window, XXX [Adding more challenge; more competitiveness, blablabla]
+1. two snakes playing together in one window, Adding more challenge and more competitiveness.
 
 2. inevitable reward from food, allowing snakes crossing itself during a short period
 
 Author: Jason Chen (CONTACT INFORMATION)
+
+Skype ID: 
+
+Email: 
 
 
 
@@ -25,14 +29,19 @@ Author: Jason Chen (CONTACT INFORMATION)
 
 # Installation
 
-There are instant-play mode and pygame-compile mode. 
+There are instant-play mode and Pygame-compile mode. 
 
-1. instant-play: run the exe/dmg/xxx file from [DIR].
+1. instant-play: run the exe/dmg/xxx file from release.
 
 2. pygame-compile:
-> pip install pygame
-> cd OOD_snake
-> python empowered_snake.py
+
+`pip install pygame`
+
+`cd Empowered_Snake`
+
+`python empowered_snake.py`
+
+
 
 # Developer Notes
 
