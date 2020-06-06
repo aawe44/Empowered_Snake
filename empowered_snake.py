@@ -1,7 +1,7 @@
-from game_state import Game_state
-from snake import Snake
-from food import Food
-from scoreboard import Scoreboard
+from game_class.game_state import Game_state
+from game_class.snake import Snake
+from game_class.food import Food
+from game_class.scoreboard import Scoreboard
 
 import pygame
 
@@ -94,8 +94,8 @@ while running:
 
     pygame.display.update()
 
-    # clock.tick(10)
-    clock.tick(5)
+    clock.tick(10)
+    # clock.tick(5)
 
 pygame.quit()
 
