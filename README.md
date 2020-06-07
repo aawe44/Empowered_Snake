@@ -24,7 +24,7 @@ Email:
 |![Screen 1](https://raw.githubusercontent.com/aawe44/pic_for_OOD_snake/master/gif/two.gif)|![Screen 2](https://raw.githubusercontent.com/aawe44/pic_for_OOD_snake/master/gif/single.gif)
 |---------------------------------------------|---------------------------------------------|
 |Two players competing each other by each controlling a snake on the board|Self-crossing in the inevitable mode
-|
+
 
 
 # Installation
