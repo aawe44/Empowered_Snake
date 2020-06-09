@@ -8,9 +8,9 @@ This "Empowered Snake" game is the power enhanced version of the classic Snake g
 
 Author: Jason Chen (CONTACT INFORMATION)
 
-Skype ID: 
+Skype ID: jasonmrchen
 
-Email: 
+Email: aawe44@gmail.com
 
 
 
@@ -45,18 +45,42 @@ There are instant-play mode and Pygame-compile mode.
 
 # Developer Notes
 
-1. The framework is developed in PyGame, utilizing interactive game window, keyboard/mouse control, and gameplay time-series features, etc..
-2. The development is based on Object-Oriented Programming, in which XXX (介绍一下不同的文件代表不同的类, 以及不同的类之间的关系)
+1. The framework is developed in PyGame, utilizing interactive game window, keyboard/mouse control, and game play time-series features, etc..
+
+2. The development is based on Object-Oriented Programming, in which game_class folder
+    * game_state.py: 
+        * show game start/over         
+    * snake.py: Display snake body.
+         * Attributes: location, length, color...etc. 
+         * Behavior: move, grow, display               
+    * food.py: 
+        * Randomly generated food         
+    * scoreboard.py: 
+        * Record the score and get one point for each food.           
+    *XXX(介绍一下不同的文件代表不同的类, 以及不同的类之间的关系)
+
+3. Main program empowered_snake.py
+     * After the game starts, the start screen is displayed by game_state.py.   
+     * After entering the game, three objects are generated, snake, food, scoreboard.    
+     * Receive keyboard commands to control the moving direction of the snake.    
+     * After moving, there are three possible states        
+        1. When the snake touches itself, end the game.    
+        2. When the snake touches the food, the snake grows itself. Create new food, update scoreboard   
+        3. When the snake touches the open ground, continue the game
+    
 3. Inevitable Reward functionality:
-3.1. Add random seed to the food generated, making some of them in different color XXX
-3.2. Whenever the snake eats the food, start a time counter and turn the game-loop into XXX mode.
-3.3. in the XXX mode, modify the collision function so that XXX
-3.4. When counter ends...
+    * Add random seed to the food generated, making some of them in black color.
+    * Whenever the snake eats the food, start a time counter and turn the game-loop into inevitable mode.
+    * In the inevitable mode, modify the collision function so that snake can self-cross.
+    * When counter ends snake return to normal mode.
+
 4. Two-Snake functionality: 
-4.1 XXX
-
-
-8. we use XXX module to export the game to executable files for different OS systems, see `XXX.py` for details.
+    * Can be played by two players at the same time
+    * The player loses the game, 
+        * When the player's snake self-cross
+        * When the player's snake touches another player's snake 
+    
+5. we use XXX / pyinstall module to export the game to executable files for different OS systems, see `XXX.py` or `export.py` for details.
 
 
 
