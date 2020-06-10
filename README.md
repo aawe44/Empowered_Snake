@@ -56,8 +56,8 @@ There are instant-play mode and Pygame-compile mode.
     * food.py: 
         * Randomly generated food         
     * scoreboard.py: 
-        * Record the score and get one point for each food.           
-    *XXX(介绍一下不同的文件代表不同的类, 以及不同的类之间的关系)
+        * Record the score: players get one point for each food.           
+    
 
 3. Main program empowered_snake.py
      * After the game starts, the start screen is displayed by game_state.py.   
@@ -80,7 +80,7 @@ There are instant-play mode and Pygame-compile mode.
         * When the player's snake self-cross
         * When the player's snake touches another player's snake 
     
-5. we use XXX / pyinstall module to export the game to executable files for different OS systems, see `XXX.py` or `export.py` for details.
+5. we use pyinstall module to export the game to executable files for different OS systems, see `XXX.py` or `export.py` for details.
 
 
 
