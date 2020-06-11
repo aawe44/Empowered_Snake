@@ -56,8 +56,7 @@ There are instant-play mode and Pygame-compile mode.
     * food.py: 
         * Randomly generated food         
     * scoreboard.py: 
-        * Record the score: players get one point for each food.           
-    
+        * Record the score: players get one point for each food.               
 
 3. Main program empowered_snake.py
      * After the game starts, the start screen is displayed by game_state.py.   
@@ -80,7 +79,11 @@ There are instant-play mode and Pygame-compile mode.
         * When the player's snake self-cross
         * When the player's snake touches another player's snake 
     
-5. we use pyinstall module to export the game to executable files for different OS systems, see `XXX.py` or `export.py` for details.
+5. Flow chart of Empowered Snake game:
+
+    ![flowchar](https://raw.githubusercontent.com/aawe44/pic_for_OOD_snake/master/flowchar.jpg)
+
+6. Executable file on release. [Empowered_Snake_Releases v0.0.1_windows](https://github.com/aawe44/Empowered_Snake/releases) 
 
 
 
